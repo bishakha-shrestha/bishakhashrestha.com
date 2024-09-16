@@ -6,14 +6,14 @@ PhD in Biochemistry with experience in life sciences, biopharmaceutical and educ
 &nbsp;
 
 ## Expertise
-- Technical: Recombinant Baculovirus Platforms, Vaccine Process Development, Publications
-- Soft Skills: Mentoring, Teaching
+- Technical: Recombinant Baculovirus Platform, Vaccine Process Development, Publications
+- Soft Skills: Presentation, Mentoring, Teaching
 - Interests: Data Science, Analytics, Life Sciences
 \
 &nbsp;
 
 ## Education
-- PhD, Chemistry and BioChemistry, [University of Texas at Arlington](https://www.uta.edu/), Texas, USA
+- PhD, Chemistry and Biochemistry, [University of Texas at Arlington](https://www.uta.edu/), Texas, USA
 - BS Chemistry, [Southwest Minnesota State University](https://www.smsu.edu/), Minnesota, USA
 \
 &nbsp;
