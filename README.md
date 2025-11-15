@@ -1,7 +1,5 @@
-![Potrait](bishakha-shrestha.jpg)
-
 ## Introduction         
-PhD in Biochemistry with experience in life sciences, biopharmaceutical and education industry, *[Bishakha Shrestha](https://www.bishakhashrestha.com/)* is passionate about contineous learning and making a postive impact in society. 
+[Bishakha Shrestha](https://www.bishakhashrestha.com/), a PhD in Biochemistry with experience in the life sciences, biopharmaceutical, and education industries, is passionate about continuous learning and making a positive impact on society.
 \
 &nbsp;
 
