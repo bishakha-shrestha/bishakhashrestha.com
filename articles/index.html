@@ -1,0 +1,125 @@
+---
+layout: default
+title: Educational Articles
+---
+
+<style>
+  .tabs {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .tab-button:hover {
+    background-color: #ddd;
+  }
+  
+  .tab-button.active {
+    border-bottom: 3px solid #666;
+    font-weight: bold;
+  }
+  
+  .tab-content {
+    display: none;
+    padding: 6px 12px;
+    animation: fadeEffect 1s;
+  }
+  
+  .resource-link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #2a7ae2;
+  }
+  
+  .resource-link:hover {
+    text-decoration: underline;
+  }
+
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+</style>
+
+<h1>Learning Resources for High School Students</h1>
+<p>Explore educational materials across various scientific fields.</p>
+
+<div class="tabs">
+  <button class="tab-button" onclick="openTab(event, 'MachineLearning')" id="defaultOpen">Machine Learning</button>
+  <button class="tab-button" onclick="openTab(event, 'BigData')">Big Data</button>
+  <button class="tab-button" onclick="openTab(event, 'DrugDiscovery')">Drug Discovery</button>
+  <button class="tab-button" onclick="openTab(event, 'GeneTherapy')">Gene Therapy</button>
+</div>
+
+<div id="MachineLearning" class="tab-content">
+  <h2>Machine Learning</h2>
+  <p>Machine learning is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy.</p>
+  <ul>
+    <li><a class="resource-link" href="https://developers.google.com/machine-learning/crash-course" target="_blank">Google's Machine Learning Crash Course</a> - A fast-paced, practical introduction to machine learning.</li>
+    <li><a class="resource-link" href="https://www.kaggle.com/learn/intro-to-machine-learning" target="_blank">Kaggle: Intro to Machine Learning</a> - Learn the core ideas of machine learning and build your first models.</li>
+    <li><a class="resource-link" href="https://course.fast.ai/" target="_blank">Fast.ai</a> - Making neural nets uncool again (accessible to everyone).</li>
+    <li><a class="resource-link" href="https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" target="_blank">3Blue1Brown: Neural Networks</a> - Visual introduction to the math behind neural networks.</li>
+  </ul>
+</div>
+
+<div id="BigData" class="tab-content">
+  <h2>Big Data</h2>
+  <p>Big data refers to data sets that are too large or complex to be dealt with by traditional data-processing application software.</p>
+  <ul>
+    <li><a class="resource-link" href="https://www.khanacademy.org/computing/ap-computer-science-principles/data-analysis-101" target="_blank">Khan Academy: Data Analysis</a> - Part of AP Computer Science Principles.</li>
+    <li><a class="resource-link" href="https://databasic.io/" target="_blank">DataBasic.io</a> - Web tools for beginners to explore data.</li>
+    <li><a class="resource-link" href="https://www.sciencebuddies.org/science-fair-projects/project-ideas/big-data" target="_blank">Science Buddies: Big Data Projects</a> - Hands-on science projects involving big data.</li>
+  </ul>
+</div>
+
+<div id="DrugDiscovery" class="tab-content">
+  <h2>Drug Discovery</h2>
+  <p>In the fields of medicine, biotechnology and pharmacology, drug discovery is the process by which new candidate medications are discovered.</p>
+  <ul>
+    <li><a class="resource-link" href="https://www.nih.gov/about-nih/what-we-do/nih-turning-discovery-into-health/drug-development-process" target="_blank">NIH: The Drug Development Process</a> - How research turns into health solutions.</li>
+    <li><a class="resource-link" href="https://www.nature.com/subjects/drug-discovery" target="_blank">Nature: Drug Discovery</a> - Latest news and research (Advanced).</li>
+    <li><a class="resource-link" href="https://www.youtube.com/results?search_query=drug+discovery+explained" target="_blank">YouTube: Drug Discovery Explained</a> - Educational videos on the process.</li>
+  </ul>
+</div>
+
+<div id="GeneTherapy" class="tab-content">
+  <h2>Gene Therapy</h2>
+  <p>Gene therapy is a medical field which focuses on the genetic modification of cells to produce a therapeutic effect or the treatment of disease by repairing or reconstructing defective genetic material.</p>
+  <ul>
+    <li><a class="resource-link" href="https://medlineplus.gov/genetics/understanding/therapy/" target="_blank">MedlinePlus: What is Gene Therapy?</a> - Accessible explanation from the National Library of Medicine.</li>
+    <li><a class="resource-link" href="https://patienteducation.asgct.org/gene-therapy-101" target="_blank">ASGCT: Gene Therapy 101</a> - Basics from the American Society of Gene + Cell Therapy.</li>
+    <li><a class="resource-link" href="https://www.genome.gov/genetics-glossary/Gene-Therapy" target="_blank">NHGRI: Gene Therapy Glossary</a> - Definitions and context from the National Human Genome Research Institute.</li>
+  </ul>
+</div>
+
+<script>
+  function openTab(evt, contentName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tab-button");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(contentName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+</script>
